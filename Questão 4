@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    float sp = 67836.43;
+    float rj = 36678.66;
+    float mg = 29229.88;
+    float es = 27165.48;
+    float outros = 19849.53;
+
+    float total = sp + rj + mg + es + outros;
+    printf("Faturamento total: R$%.2f\n", total);
+
+    float sp_pct = (sp / total) * 100;
+    float rj_pct = (rj / total) * 100;
+    float mg_pct = (mg / total) * 100;
+    float es_pct = (es / total) * 100;
+    float outros_pct = (outros / total) * 100;
+
+    printf("Percentual de representação de cada estado:\n");
+    printf("SP: %.2f%%\n", sp_pct);
+    printf("RJ: %.2f%%\n", rj_pct);
+    printf("MG: %.2f%%\n", mg_pct);
+    printf("ES: %.2f%%\n", es_pct);
+    printf("Outros: %.2f%%\n", outros_pct);
+
+    return 0;
+}
